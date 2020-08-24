@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid" style="height: 100vh;">
+      <div class="row" style="height: 100vh;">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 my-auto">
+          <div class="jumbotron p-3">
+            <h1 class="text-center">STOPWATCH</h1> <hr>
+            <h1 class="text-center">
+                <span id="divMin">00</span> -
+                <span id="divSec">00</span> -
+                <span id="divMsec">000</span>
+            </h1>
+            <button id="btnStart" class="btn btn-block btn-dark">Start</button>
+            <button id="btnPause" class="btn btn-block btn-warning" style="display: none;">Pause</button>
+            <button id="btnResume" class="btn btn-block btn-success" style="display: none;">Resume</button>
+            <button id="btnReset" class="btn btn-block btn-danger" style="display: none;">Reset</button>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
